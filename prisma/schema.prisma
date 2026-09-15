@@ -1,0 +1,61 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Clinic {
+  id             String                @id
+  name           String
+  tagline        String?
+  address        String
+  phone          String
+  email          String?
+  operatingHours String?               @default("Mon - Sat: 9:00 AM - 8:00 PM")
+  isActive       Boolean               @default(true)
+  createdAt      DateTime              @default(now())
+  updatedAt      DateTime              @updatedAt
+  registrations  PatientRegistration[]
+}
+
+model PatientRegistration {
+  id                       String   @id @default(cuid())
+  registrationNumber       String   @unique
+  idempotencyKey           String   @unique @default(cuid())
+  fullName                 String
+  mobileNumber             String
+  dateOfBirth              String
+  age                      Int      @default(0)
+  gender                   String
+  email                    String?
+  address                  String?
+  status                   String   @default("REGISTERED")
+  clinicId                 String?  @default("DEN-BLR-001")
+  clinic                   Clinic?  @relation(fields: [clinicId], references: [id])
+  emergencyContactName     String?
+  emergencyContactNumber   String?
+  emergencyContactRelation String?
+  medicalHistory           String?  @default("[]")
+  allergies                String?  @default("[]")
+  currentMedications       String?
+  previousSurgeries        String?
+  mainDentalConcern        String?
+  previousDentalTreatment  String?
+  currentSymptoms          String?
+  painLevel                Int?     @default(0)
+  consentGiven             Boolean? @default(true)
+  registrationSource       String?  @default("PHYSICAL_QR")
+  isPotentialDuplicate     Boolean? @default(false)
+  duplicateReason          String?
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+
+  @@index([clinicId])
+  @@index([mobileNumber])
+  @@index([idempotencyKey])
+  @@index([status])
+  @@index([createdAt])
+}
