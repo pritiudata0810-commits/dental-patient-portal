@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1120" width="800" height="1120">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .font-main { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+    <filter id="card-shadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1120" fill="#f8fafc" />
+
+  <!-- Outer Card Frame -->
+  <rect x="30" y="30" width="740" height="1060" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+
+  <!-- Top Blue Accent -->
+  <path d="M 32 54 A 22 22 0 0 1 54 32 L 746 32 A 22 22 0 0 1 768 54 L 768 42 L 32 42 Z" fill="#0284c7" />
+
+  <!-- Hospital Brand Header -->
+  <g transform="translate(400, 95)" text-anchor="middle" class="font-main">
+    <g transform="translate(-155, -24)">
+      <rect x="0" y="0" width="40" height="40" rx="10" fill="#e0f2fe" />
+      <path d="M 20 10 C 15 10 13 13 13 17 C 13 22 15 25 16 30 C 16.5 32 18 32 19 30 C 19.5 28 20 24 20 24 C 20 24 20.5 28 21 30 C 22 32 23.5 32 24 30 C 25 25 27 22 27 17 C 27 13 25 10 20 10 Z" fill="#0284c7" />
+    </g>
+    <text x="15" y="4" font-size="24" font-weight="800" fill="#0f172a" letter-spacing="1.5">APEX DENTAL HOSPITAL</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(400, 155)" class="font-main">
+    <rect x="-120" y="-15" width="240" height="30" rx="15" fill="#e0f2fe" />
+    <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="700" fill="#0369a1" letter-spacing="1">PATIENT REGISTRATION</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="400" y="230" text-anchor="middle" class="font-main" font-size="34" font-weight="800" fill="#0f172a">
+    Scan to Register as a New Patient
+  </text>
+  <text x="400" y="268" text-anchor="middle" class="font-main" font-size="16" font-weight="500" fill="#64748b">
+    Point your smartphone camera at the QR code to open the form
+  </text>
+
+  <!-- QR Frame Card -->
+  <rect x="180" y="305" width="440" height="440" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#card-shadow)" />
+
+  <!-- High-Contrast Embedded QR Code -->
+  <svg x="210" y="335" width="380" height="380" viewBox="0 0 41 41" shape-rendering="crispEdges">
+    <path fill="#ffffff" d="M0 0h41v41H0z"/><path stroke="#000000" d="M4 4.5h7m2 0h1m3 0h1m5 0h3m1 0h1m2 0h7M4 5.5h1m5 0h1m4 0h5m5 0h1m4 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m1 0h3m1 0h2m1 0h2m2 0h3m2 0h1m1 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m1 0h1m5 0h1m1 0h2m1 0h1m6 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h1m3 0h2m1 0h1m3 0h2m2 0h1m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h3m4 0h2m1 0h1m1 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M12 11.5h1m1 0h3m1 0h2m2 0h1m1 0h2m2 0h1M4 12.5h1m1 0h5m3 0h1m2 0h3m1 0h2m5 0h1m1 0h5M4 13.5h6m1 0h2m2 0h1m4 0h1m1 0h3m2 0h1m2 0h2m1 0h4M4 14.5h3m2 0h2m1 0h2m1 0h2m2 0h4m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2M5 15.5h5m3 0h1m1 0h1m2 0h2m2 0h1m1 0h3m2 0h2m1 0h4M4 16.5h1m5 0h3m2 0h2m2 0h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h3M7 17.5h1m1 0h1m2 0h13m1 0h2m2 0h1m4 0h2M8 18.5h1m1 0h3m3 0h1m7 0h3m2 0h4m1 0h2M4 19.5h1m7 0h4m1 0h2m1 0h1m2 0h1m1 0h2m1 0h4m2 0h1M4 20.5h2m4 0h2m6 0h1m2 0h1m4 0h1m2 0h1m1 0h2m3 0h1M4 21.5h6m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h5m2 0h2m1 0h2m1 0h1M5 22.5h2m1 0h3m3 0h6m1 0h1m2 0h1m3 0h2m1 0h2m1 0h2M4 23.5h2m1 0h2m2 0h2m1 0h1m1 0h1m1 0h5m2 0h1m1 0h1m1 0h1m1 0h4M6 24.5h3m1 0h2m1 0h2m1 0h1m2 0h2m2 0h2m1 0h4m2 0h2m1 0h2M4 25.5h3m4 0h1m2 0h2m2 0h2m2 0h4m1 0h1m2 0h1m2 0h1m2 0h1M4 26.5h1m1 0h2m2 0h1m1 0h1m2 0h2m1 0h3m1 0h1m1 0h2m2 0h2m5 0h1M4 27.5h1m2 0h2m2 0h3m2 0h1m1 0h2m2 0h1m2 0h1m1 0h1m5 0h2m1 0h1M4 28.5h1m1 0h1m2 0h2m2 0h1m1 0h2m1 0h4m1 0h1m2 0h8m1 0h1M12 29.5h1m1 0h2m4 0h1m1 0h4m2 0h1m3 0h1m1 0h1m1 0h1M4 30.5h7m2 0h1m1 0h1m1 0h3m2 0h1m2 0h4m1 0h1m1 0h1m1 0h2M4 31.5h1m5 0h1m1 0h1m1 0h1m2 0h1m6 0h5m3 0h3m1 0h1M4 32.5h1m1 0h3m1 0h1m1 0h1m2 0h5m2 0h1m3 0h1m1 0h6m1 0h1M4 33.5h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h4m1 0h3m1 0h3m2 0h5M4 34.5h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h1m2 0h2m1 0h2m1 0h2M4 35.5h1m5 0h1m2 0h1m2 0h3m1 0h1m2 0h4m2 0h2m1 0h3M4 36.5h7m1 0h1m4 0h1m2 0h2m2 0h1m1 0h1m1 0h1m2 0h1m3 0h1"/></svg>
+
+  </svg>
+
+  <!-- 3 Steps Guide -->
+  <g transform="translate(400, 800)" class="font-main">
+    <rect x="-330" y="-30" width="660" height="145" rx="18" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Step 1 -->
+    <g transform="translate(-220, 15)">
+      <circle cx="0" cy="0" r="18" fill="#0284c7" />
+      <text x="0" y="6" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">1</text>
+      <text x="0" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Open Camera</text>
+      <text x="0" y="60" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">On any smartphone</text>
+    </g>
+
+    <!-- Step 2 -->
+    <g transform="translate(0, 15)">
+      <circle cx="0" cy="0" r="18" fill="#0284c7" />
+      <text x="0" y="6" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">2</text>
+      <text x="0" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Point at QR</text>
+      <text x="0" y="60" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">Tap the screen link</text>
+    </g>
+
+    <!-- Step 3 -->
+    <g transform="translate(220, 15)">
+      <circle cx="0" cy="0" r="18" fill="#0284c7" />
+      <text x="0" y="6" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">3</text>
+      <text x="0" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Fill &amp; Submit</text>
+      <text x="0" y="60" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">Instant registration</text>
+    </g>
+  </g>
+
+  <!-- URL Caption & Hospital Note -->
+  <g transform="translate(400, 990)" class="font-main" text-anchor="middle">
+    <text x="0" y="0" font-size="13" font-weight="600" fill="#0284c7">
+      https://dental-patient-portal-flax.vercel.app/register
+    </text>
+    <text x="0" y="24" font-size="13" font-weight="500" fill="#94a3b8">
+      Direct Portal • Unlimited Patients • No App Download Required
+    </text>
+    <text x="0" y="48" font-size="12" font-weight="500" fill="#cbd5e1">
+      If you need assistance, please speak to our reception staff
+    </text>
+  </g>
+</svg>
